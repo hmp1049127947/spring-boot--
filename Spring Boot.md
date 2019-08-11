@@ -1949,6 +1949,11 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
 
 2）、SpringBoot自动配置好了管理国际化资源文件的组件；
 
+application.properties中的配置
+```xml
+spring.messages.basename=i18n.login
+```
+
 ```java
 @ConfigurationProperties(prefix = "spring.messages")
 public class MessageSourceAutoConfiguration {
